@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Form and Fields examples</title>
+  </head>
+  <body>
+
+    <!-- https://developer.mozilla.org/en-US/docs/Learn/Forms/HTML5_input_types -->
+    <fieldset>
+        <span>Billing Address</span><input type="text" />
+        <span>City</span><input type="text" />
+        <span>Province</span><input type="text" />
+        <span>Postal Code</span><input type="text" />
+    </fieldset>
+
+    <fieldset>
+      <legend>Colour</legend>
+
+      <input type="radio" name="colour" value="red" id="colour_red">
+      <label for="colour_red">Red</label>
+
+      <input type="radio" name="colour" value="green" id="colour_green">
+      <label for="colour_green">Green</label>
+
+      <input type="radio" name="colour" value="blue" id="colour_blue">
+      <label for="colour_blue">Blue</label>
+
+    </fieldset>
+
+    <fieldset>
+    <legend>Billing Address</legend>
+    <span>Address</span><input type="text" />
+    <span>City</span><input type="text" />
+    <span>Province</span><input type="text" />
+    <span>Postal Code</span><input type="text" />
+</fieldset>
+
+<!--Name Imput Fields for later use-->
+
+<fieldset>
+    <span>Billing Address</span><input type="text" name="billAddress" />
+    <span>City</span><input type="text" name="billCity" />
+    <span>Province</span><input type="text" name="billProvince" />
+    <span>Postal Code</span><input type="text" name="billPC" />
+</fieldset>
+
+<!-- use labels -->
+
+<fieldset>
+    <legend>Billing Address</legend>
+    <label>Address</label><input type="text" name="billAddress" />
+    <label>City</label><input type="text" name="billCity" />
+    <label>Province</label><input type="text" name="billProvince" />
+    <label>Postal Code</label><input type="text" name="billPC" />
+</fieldset>
+
+<!-- dropdowns with subcategories -->
+
+<select>
+<optgroup label="USA">
+    <option>Alabama</option>
+    <option>Alaska</option>
+    <option>Arizona</option>
+</optgroup>
+<optgroup label="Canada">
+    <option>Alberta</option>
+    <option>British Columbia</option>
+    <option>Manitoba</option>
+</optgroup>
+</select>
+<!-- button instead of submit. More options -->
+<button type="submit"><img src="" alt="" /> Submit</button>
+
+<label for="holiday-choice">Choose Your Favorite Holiday:</label>
+<input list="holiday-names" id="holiday-choice" name="holiday-choice" />
+
+<datalist id="holiday-names">
+    <option value="New Year's Day">
+    <option value="Independence Day">
+    <option value="Halloween">
+    <option value="Thanksgiving">
+    <option value="Christmas Day">
+</datalist>
+  </body>
+</html>
